@@ -28,7 +28,7 @@ class MinhaTV(Iterable):
     def __iter__(self):
         return CanalIterator(self.canais)
 
-# Nosso Iterador (O "guia turístico" da coleção)
+# Nosso Iterador (O que realmente sabe todos os itens da coleção)
 class CanalIterator(Iterator):
     def __init__(self, dados):
         self.dados = dados
